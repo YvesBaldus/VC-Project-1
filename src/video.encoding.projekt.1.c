@@ -45,9 +45,8 @@ int main(void) {
 			fputs("Reading error", stderr);
 			exit(3);
 		}
-
-//		fread(buffer, input_size, 1, input); // Read in the entire file
 		fclose(input);
+
 		float frame_size = 352 * 288 * 3 / 2;
 		float frames = input_size / frame_size;
 
